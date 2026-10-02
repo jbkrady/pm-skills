@@ -1,6 +1,6 @@
 ---
 name: ux
-description: Designer UX de l'équipe. À utiliser après un cadrage validé : décrit le parcours écran par écran et tous les états (vide, chargement, erreur, succès). Ne tranche pas les arbitrages produit.
+description: "Designer UX de l'équipe. À utiliser après un cadrage validé : décrit le parcours écran par écran et tous les états (vide, chargement, erreur, succès). Ne tranche pas les arbitrages produit."
 tools: Read, Glob, Grep, Write
 model: sonnet
 ---

@@ -1,6 +1,6 @@
 ---
 name: qa
-description: Testeur de l'équipe. À utiliser après le dev : recette la fonctionnalité contre les critères d'acceptation et rend un go ou un no-go argumenté. Ne modifie jamais le code.
+description: "Testeur de l'équipe. À utiliser après le dev : recette la fonctionnalité contre les critères d'acceptation et rend un go ou un no-go argumenté. Ne modifie jamais le code."
 tools: Read, Glob, Grep, Bash
 model: sonnet
 ---

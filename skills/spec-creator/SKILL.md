@@ -1,13 +1,13 @@
 ---
 name: spec-creator
-description: "Rédiger, compléter ou découper une spec de fonctionnalité au format Noé : cadrage, user stories, acceptance criteria Given/When/Then, management rules, edge cases, tracking, releases, rollout, testing. Déclenche sur « rédige une spec », « spec-creator », « écris l'US »."
+description: "Rédiger, compléter ou découper une spec de fonctionnalité (format inspiré de la formation Product Manager de Noé) : cadrage, user stories, acceptance criteria Given/When/Then, management rules, edge cases, tracking, releases, rollout, testing. Déclenche sur « rédige une spec », « spec-creator », « écris l'US »."
 ---
 
 # Spec Creator
 
-Produit une spec de fonctionnalité exploitable par une équipe de développement, au format de la méthode Noé. Fonctionne pour n'importe quel produit : le contexte est demandé à chaque usage, jamais supposé.
+Produit une spec de fonctionnalité exploitable par une équipe de développement, dans un format inspiré de la formation Product Manager de Noé. Fonctionne pour n'importe quel produit : le contexte est demandé à chaque usage, jamais supposé.
 
-Langue de travail et de sortie : **français**. Les noms de sections restent en anglais (Context & User Persona, User Stories, Acceptance Criteria, Management Rules, Edge Cases, Designs & Workflow Diagrams, Tracking, Releases, Rollout Plan, Testing Plan) car c'est la convention du cadre Noé.
+Langue de travail et de sortie : **français**. Les noms de sections restent en anglais (Context & User Persona, User Stories, Acceptance Criteria, Management Rules, Edge Cases, Designs & Workflow Diagrams, Tracking, Releases, Rollout Plan, Testing Plan) : c'est la convention courante des équipes produit.
 
 ---
 
