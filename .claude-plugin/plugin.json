@@ -1,0 +1,11 @@
+{
+  "name": "pm-skills",
+  "displayName": "PM Skills",
+  "version": "1.0.0",
+  "description": "Des skills Claude pour Product Managers : entretiens, user journeys, specs, user stories, benchmark, décision.",
+  "author": { "name": "Jean-Baptiste Krady", "url": "https://krady.fr" },
+  "homepage": "https://github.com/jbkrady/pm-skills",
+  "repository": "https://github.com/jbkrady/pm-skills",
+  "license": "MIT",
+  "keywords": ["product-management", "discovery", "spec", "user-story", "benchmark"]
+}
