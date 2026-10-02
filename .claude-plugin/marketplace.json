@@ -1,12 +1,12 @@
 {
   "name": "jbkrady",
   "owner": { "name": "Jean-Baptiste Krady", "url": "https://krady.fr" },
-  "description": "Les skills Claude de Jean-Baptiste Krady, Product Manager.",
+  "description": "Les skills Claude et l'équipe d'agents produit de Jean-Baptiste Krady, Product Manager.",
   "plugins": [
     {
       "name": "pm-skills",
       "source": "./",
-      "description": "Des skills Claude pour Product Managers : entretiens, user journeys, specs, user stories, benchmark, décision."
+      "description": "Skills Claude pour Product Managers (entretiens, user journeys, specs, user stories, benchmark, décision) et modèle d'équipe d'agents produit."
     }
   ]
 }

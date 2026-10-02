@@ -78,7 +78,7 @@ Chaque agent précharge les skills de son métier (`skills:` dans sa fiche). Ceu
 
 1. Copier le contenu de ce dossier à la racine du projet : `.claude/`, `CLAUDE.md`, `DECISIONS.md`.
 2. Remplir `CLAUDE.md` : produit, sources de vérité, périmètre, Definition of Done, contraintes, règles de rédaction.
-3. **Skills préchargés** : le champ `skills:` d'une fiche lit les skills du dossier `.claude/skills/` du projet. Copier-y les dossiers listés ci-dessus depuis leurs dépôts sources, avec leur fichier de licence.
+3. **Skills préchargés : étape indispensable.** Le champ `skills:` d'une fiche lit les skills du dossier `.claude/skills/` du projet. Copier-y les dossiers listés ci-dessus depuis leurs dépôts sources, avec leur fichier de licence. Sans cette étape, les agents démarrent quand même, mais sans leurs skills, et **sans aucune erreur visible**.
 4. Ajouter aux fiches les outils de vos connecteurs (backlog, maquettes, navigateur), par exemple `mcp__playwright__*`.
 5. Adapter `chris-guard.sh` (les dossiers de code) et `session-start.sh` (le nom du check obligatoire sur `main`).
 6. Lancer une fonctionnalité : `/feature …` ou `/dev-front …`.
