@@ -60,25 +60,29 @@ Quelques règles nées ainsi :
 
 ## Les skills de l'équipe
 
-Chaque agent précharge les skills de son métier (`skills:` dans sa fiche). Ceux de ce dépôt sont signalés ; les autres viennent de dépôts publics d'Anthropic.
+Chaque agent précharge les skills de son métier (`skills:` dans sa fiche). **Ils sont tous inclus** dans `.claude/skills/` : l'équipe fonctionne dès qu'on copie le dossier. Ceux qui ne viennent pas de ce dépôt sont des **copies non modifiées**, chacune avec sa licence et un fichier `ORIGINE.md` qui donne sa source exacte.
 
 | Agent | Skills | Origine |
 |---|---|---|
 | SAM | `user-story`, `spec-creator` | **Ce dépôt** ([skills/](../skills/)) |
+| Tous | `business-analysis`, `conseil-5-voix` | **Ce dépôt**, pour les décisions structurantes |
+| Orchestrateur | `fin-de-session` | **Ce modèle** |
 | SAM, ALEX, MAX | `frontend-design` | Anthropic, [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/frontend-design) (Apache 2.0) |
 | SAM, ALEX | `documentation` | Anthropic, plugin [engineering](https://github.com/anthropics/knowledge-work-plugins/tree/main/engineering) (Apache 2.0) |
 | ALEX | `system-design`, `architecture`, `code-review`, `debug` ; à la demande : `deploy-checklist`, `tech-debt` | Anthropic, plugin [engineering](https://github.com/anthropics/knowledge-work-plugins/tree/main/engineering) (Apache 2.0) |
 | CHRIS | `testing-strategy`, `debug`, `incident-response` | Anthropic, plugin [engineering](https://github.com/anthropics/knowledge-work-plugins/tree/main/engineering) (Apache 2.0) |
 | MAX | `campaign-plan`, `content-creation`, `draft-content`, `competitive-brief`, `email-sequence`, `brand-review`, `performance-report`, `seo-audit` | Anthropic, plugin [marketing](https://github.com/anthropics/knowledge-work-plugins/tree/main/marketing) (Apache 2.0) |
 | MAX | `discover-brand`, `guideline-generation`, `brand-voice-enforcement` | Tribe AI, plugin partenaire [brand-voice](https://github.com/anthropics/knowledge-work-plugins/tree/main/partner-built/brand-voice) publié par Anthropic (MIT) |
-| Tous | `business-analysis`, `conseil-5-voix` | **Ce dépôt**, pour les décisions structurantes |
-| Orchestrateur | `fin-de-session` | **Ce modèle** (`.claude/skills/`) |
+
+Dans les skills d'Anthropic, un mot précédé de `~~` (par exemple `~~monitoring`) désigne une catégorie d'outil : celui que vous utilisez pour ça. Branchez le connecteur correspondant si vous en avez un ; sinon, le skill fonctionne sans.
+
+Ces copies sont figées à la date de copie. Pour la dernière version, suivez le lien de `ORIGINE.md`.
 
 ## Installer dans un projet
 
 1. Copier le contenu de ce dossier à la racine du projet : `.claude/`, `CLAUDE.md`, `DECISIONS.md`.
 2. Remplir `CLAUDE.md` : produit, sources de vérité, périmètre, Definition of Done, contraintes, règles de rédaction.
-3. **Skills préchargés : étape indispensable.** Le champ `skills:` d'une fiche lit les skills du dossier `.claude/skills/` du projet. Copier-y les dossiers listés ci-dessus depuis leurs dépôts sources, avec leur fichier de licence. Sans cette étape, les agents démarrent quand même, mais sans leurs skills, et **sans aucune erreur visible**.
+3. Les skills sont déjà dans `.claude/skills/` : rien à installer. Retirez ceux dont votre équipe n'a pas besoin.
 4. Ajouter aux fiches les outils de vos connecteurs (backlog, maquettes, navigateur), par exemple `mcp__playwright__*`.
 5. Adapter `chris-guard.sh` (les dossiers de code) et `session-start.sh` (le nom du check obligatoire sur `main`).
 6. Lancer une fonctionnalité : `/feature …` ou `/dev-front …`.

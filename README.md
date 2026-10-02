@@ -62,4 +62,4 @@ Puis `/reload-plugins`. Les skills se déclenchent seuls quand la demande s'y pr
 
 Jean-Baptiste Krady, Product Manager · AI & Data Builder · [krady.fr](https://krady.fr)
 
-Licence MIT pour les contenus de ce dépôt. Les skills d'Anthropic et de ses partenaires cités dans l'équipe d'agents restent sous leur propre licence.
+Licence MIT pour les contenus de ce dépôt. Les skills d'Anthropic et de ses partenaires copiés dans `equipe-agents/.claude/skills/` restent sous leur propre licence (voir le fichier `ORIGINE.md` de chacun).
